@@ -1,0 +1,44 @@
+/* colors */
+:root {
+  --primaryColor: #eb4d09;
+}
+
+body {
+  color: #000;
+}
+
+.as-bg-primary {
+  background-color: var(--primaryColor);
+}
+
+.section-banner {
+  padding: 3rem;
+}
+.banner-right {
+  background-image: url('../images/bg-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(235, 77, 9);
+}
+.banner-dark {
+  background-color: rgba(235, 77, 9, 0.2);
+  height: 100%;
+  width: 100%;
+}
+
+.stories .col {
+  margin-top: 5rem;
+}
+.stories .card {
+  height: 30rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+.stories-thumbnail {
+  height: 60%;
+}
+.stories .card-body {
+  height: 38%;
+  overflow: hidden;
+}
