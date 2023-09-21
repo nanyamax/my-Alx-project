@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="signup-title">Sign up</h1>
+      <p id="signup-description">
+        Join the community to tell your amazing story
+      </p>
+    </header>
+    <div class="container">
+      <div class="slider"></div>
+      <div class="btn">
+        <button class="login">Login</button>
+        <button class="signup">Signup</button>
+        <form id="signup-form">
+          <!-- login form -->
+          <div class="login-box">
+            <input
+              type="email"
+              class="email ele"
+              placeholder="youremail@email.com" />
+            <input
+              type="password"
+              class="password ele"
+              placeholder="password" />
+            <button class="clkbtn">Login</button>
+          </div>
+
+          <!-- signup form -->
+          <input type="text" id="fullname" placeholder="Fullname" required />
+          <input type="text" id="email" placeholder="Email Address" required />
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="text" id="cohort" placeholder="Cohort" required />
+          <input type="radio" name="gender" value="male" /> Male
+          <input type="radio" name="gender" value="female" /> Female
+          <p><input type="submit" value="Submit" /></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
