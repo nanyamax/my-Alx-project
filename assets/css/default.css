@@ -1,0 +1,51 @@
+/* colors */
+:root {
+  --primaryColor: rgb(235, 77, 9);
+  --primaryColorLight: rgba(235, 77, 9, 0.8);
+}
+
+.as-bg-primary {
+  background-color: var(--primaryColor);
+}
+
+.as-text-primary {
+  color: var(--primaryColor);
+}
+
+body {
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.primaryButton {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.primaryButton:hover {
+  background-color: var(--primaryColorLight);
+  color: #fff;
+}
+
+.primaryButton:active {
+  border-width: 1px solid !important;
+  border-color: var(--primaryColor) !important;
+  color: var(--primaryColor) !important;
+}
+.as-nav {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+.as-nav a {
+  color: #fff;
+}
+
+.as-nav a:hover {
+  color: rgb(244, 161, 126);
+}
+.is-active {
+  color: rgb(244, 161, 126) !important;
+}

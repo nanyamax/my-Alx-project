@@ -1,3 +1,45 @@
-.container {
-  background-image: url(assets/images/background-image);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.auth {
+  min-height: 100vh;
+  background-image: url('/auth/assets/images/bg_orange.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.intro-col {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.intro-div {
+  color: #fff;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+.form-col {
+  display: flex;
+  height: 100vh;
+  /* padding-bottom: 1rem; */
+}
+.form-div {
+  background-color: #fff;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(50, 50, 50, 0.4);
+}
+.form-top {
+  text-align: center;
 }
