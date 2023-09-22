@@ -4,14 +4,12 @@ const Forms = {
 };
 
 const onAuthPageLoad = () => {
-  const currentPage = window.location.hash;
+  const currentPage = window.location.hash.replace('#', '');
   if (currentPage === Forms.Signup) {
     renderForm(Forms.Signup);
   } else {
     renderForm(Forms.Login);
   }
-
-  console.log('Testee currentPage : ', currentPage);
 };
 
 const renderForm = (form) => {
@@ -20,8 +18,10 @@ const renderForm = (form) => {
     .then((res) => res.text())
     .then((text) => {
       let oldelem = document.querySelector('#render-form');
-      let newelem = document.createElement('div');
-      newelem.innerHTML = text;
-      oldelem.parentNode.replaceChild(newelem, oldelem);
+      oldelem.innerHTML = text;
     });
 };
+
+window.addEventListener('hashchange', () => {
+  onAuthPageLoad();
+});
