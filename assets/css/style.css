@@ -24,6 +24,7 @@
 }
 .stories-thumbnail {
   height: 60%;
+  overflow: hidden;
 }
 .stories .card-body {
   height: 38%;

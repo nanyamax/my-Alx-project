@@ -1,5 +1,10 @@
+import { addNavToPage, addFooterToPage } from '../../utils/utils.js';
+import { ALL_PAGES } from '../../constants/constants.js';
+
 const pageLoaded = () => {
+  addNavToPage(ALL_PAGES.Home);
   cardText();
+  addFooterToPage();
 };
 
 const shortenLongText = ({ text, textMax, wordMax, showDots }) => {
@@ -24,13 +29,11 @@ const cardText = () => {
 
   const textArray = [];
   text.forEach((eachText) => textArray.push(eachText.textContent));
-
-  console.log(
-    shortenLongText({ text: textArray[0], textMax: 45, showDots: true })
-  );
 };
 
 const getStory = (storyId) => {
   const allStories = [...ALL_STORIES_DB];
   if (!storyId) return allStories;
 };
+
+document.addEventListener('DOMContentLoaded', () => pageLoaded());

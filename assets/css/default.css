@@ -49,3 +49,10 @@ a {
 .is-active {
   color: rgb(244, 161, 126) !important;
 }
+
+.section-footer {
+  background-color: var(--primaryColor);
+  padding: 0.8rem 0;
+  text-align: center;
+  color: #fff;
+}
